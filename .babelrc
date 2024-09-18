@@ -1,0 +1,14 @@
+{
+  "plugins": [
+    "@babel/plugin-proposal-object-rest-spread",
+    "import-glob"
+  ],
+  "env": {
+    "commonjs": {
+      "presets": ["@babel/preset-env", "@babel/preset-react"]
+    },
+    "es": {
+      "presets": [["@babel/preset-env", { "modules": false }], "@babel/preset-react"]
+    }
+  }
+}
